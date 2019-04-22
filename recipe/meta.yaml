@@ -1,6 +1,6 @@
 {% set name = "bitarray" %}
-{% set version = "0.8.3" %}
-{% set sha256 = "050cd30b810ddb3aa941e7ddfbe0d8065e793012d0a88cb5739ec23624b9895e" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "29401d5c70ddea7a571bd1d7a13821db943917a03c428e37ff794eb2636905c2" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install
 
 requirements:
