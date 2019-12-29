@@ -29,8 +29,7 @@ test:
 about:
   home: https://github.com/ilanschnell/bitarray
   license: PSF
-  # https://github.com/ilanschnell/bitarray/issues
-  # license_file: LICENSE
+  license_file: LICENSE
   summary: 'efficient arrays of booleans -- C extension'
   description: |
     Bitarray provides an object type which efficiently represents an array of
