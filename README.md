@@ -5,7 +5,7 @@ Home: https://github.com/ilanschnell/bitarray
 
 Package license: PSF
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: efficient arrays of booleans -- C extension
 
