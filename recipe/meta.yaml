@@ -11,6 +11,10 @@ source:
 
 build:
   number: 0
+  {% if 'pypy' in python %}
+  # https://github.com/ilanschnell/bitarray/issues/99
+  skip: True
+  {% endif %}
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
