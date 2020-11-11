@@ -10,7 +10,7 @@ source:
   sha256: 27a69ffcee3b868abab3ce8b17c69e02b63e722d4d64ffd91d659f81e9984954
 
 build:
-  number: 0
+  number: 1 
   {% if 'pypy' in python %}
   # https://github.com/ilanschnell/bitarray/issues/99
   skip: true
