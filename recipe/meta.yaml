@@ -1,5 +1,5 @@
 {% set name = "bitarray" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ab85b38365dd9956264226b30dababa02161ed49bb36c7ee82cc6545e07b1599
+  sha256: 71779b5ccf1187ccebb77099a5bd9615e37fb55a6b2f2e766118ffaf87790dba
 
 build:
-  number: 1
+  number: 0
   {% if 'pypy' in python %}
   # https://github.com/ilanschnell/bitarray/issues/99
   skip: true
