@@ -1,11 +1,11 @@
-About bitarray
-==============
+About bitarray-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bitarray-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ilanschnell/bitarray
 
 Package license: PSF-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bitarray-feedstock/blob/main/LICENSE.txt)
 
 Summary: efficient arrays of booleans -- C extension
 
