@@ -1,5 +1,5 @@
 {% set name = "bitarray" %}
-{% set version = "2.9.2" %}
+{% set version = "2.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a8f286a51a32323715d77755ed959f94bef13972e9a2fe71b609e40e6d27957e
+  sha256: 9eff55cf189b0c37ba97156a00d640eb7392db58a8049be6f26ff2712b93fa89
 
 build:
-  number: 1
+  number: 0
   # https://github.com/ilanschnell/bitarray/issues/99
   skip: true  # [python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
