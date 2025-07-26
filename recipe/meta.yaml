@@ -1,5 +1,5 @@
 {% set name = "bitarray" %}
-{% set version = "3.4.3" %}
+{% set version = "3.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dddfb2bf086b66aec1c0110dc46642b7161f587a6441cfe74da9e323975f62f0
+  sha256: 08a86f85fd0534da3b753f072c7b0d392d4c0c9418fe2a358be378152cf6b085
 
 build:
   number: 0
