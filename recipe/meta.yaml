@@ -1,13 +1,13 @@
 {% set name = "bitarray" %}
-{% set version = "3.6.0" %}
+{% set version = "3.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 20febc849a1f858e6a57a7d47b323fe9e727c579ddd526d317ad8831748a66a8
+  url: https://files.pythonhosted.org/packages/1b/76/b08705dbfabc4169eab93bba4a10b0ad60940f48cc8a62ff16e2a05f0452/bitarray-{{ version }}.tar.gz
+  sha256: 4255bff37b01562b8e6adcf9db256029765985b0790c5ff76bbe1837edcd53ea
 
 build:
   number: 0
