@@ -10,7 +10,7 @@ source:
   sha256: 3eae38daffd77c9621ae80c16932eea3fb3a4af141fb7cc724d4ad93eff9210d
 
 build:
-  number: 0
+  number: 1
   # https://github.com/ilanschnell/bitarray/issues/99
   skip: true  # [python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
