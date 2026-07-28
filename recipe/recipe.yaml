@@ -34,7 +34,14 @@ tests:
   - python:
       imports:
         - bitarray
-      pip_check: false
+      pip_check: true
+  - script:
+    - if: unix
+      then: python ${SP_DIR}/bitarray/test_bitarray.py -v
+      else: python %SP_DIR%/bitarray/test_bitarray.py -v
+    requirements:
+      run:
+        - python
 
 about:
   license: PSF-2.0
