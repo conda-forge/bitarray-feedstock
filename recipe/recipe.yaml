@@ -36,9 +36,7 @@ tests:
         - bitarray
       pip_check: true
   - script:
-    - if: unix
-      then: python ${SP_DIR}/bitarray/test_bitarray.py -v
-      else: python %SP_DIR%/bitarray/test_bitarray.py -v
+    - python -m bitarray.test_bitarray -v
     requirements:
       run:
         - python
