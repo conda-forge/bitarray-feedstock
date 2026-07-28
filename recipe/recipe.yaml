@@ -1,22 +1,19 @@
 schema_version: 1
 
 context:
-  name: bitarray
   version: "3.9.2"
 
 package:
-  name: ${{ name|lower }}
+  name: bitarray
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/53/71/dd598d2d546d11d7aca6cd25f05875e2dad194df0a663f1892690d4fb90d/bitarray-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/b/bitarray/bitarray-${{ version }}.tar.gz
   sha256: 37342f81c8f8e10ee5d1e23d5eda2e8dbd9d8d3a9d90e8285181fad57f21cdc1
 
 build:
-  # https://github.com/ilanschnell/bitarray/issues/99
   number: 0
-  skip: python_impl == "pypy"
-  script: ${{ PYTHON }} -m pip install . --no-deps -vv
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
@@ -28,8 +25,8 @@ requirements:
         - cross-python_${{ target_platform }}
   host:
     - python
+    - setuptools >=42.0.0
     - pip
-    - setuptools
   run:
     - python
 
@@ -49,7 +46,7 @@ about:
     to usual lists. All functionality is implemented in C.
   homepage: https://github.com/ilanschnell/bitarray
   repository: https://github.com/ilanschnell/bitarray
-  documentation: https://pypi.python.org/pypi/bitarray/0.8.1
+  documentation: https://pypi.python.org/pypi/bitarray/
 
 extra:
   recipe-maintainers:
