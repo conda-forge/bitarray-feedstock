@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.10.1"
+  version: "3.2.0"
 
 package:
   name: bitarray
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/bitarray/bitarray-${{ version }}.tar.gz
-  sha256: c33e48906407ab3d0edb96cc5ab2a599bda5dd04704ebcd9b3e0eedce7310e0a
+  sha256: f766d1c6a5cbb1f87cb8ce0ff46cefda681cc2f9bef971908f914b2862409922
 
 build:
   number: 0
